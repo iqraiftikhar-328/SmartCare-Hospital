@@ -3,7 +3,7 @@
 A modern, responsive, and interactive web portal for hospital management. This project provides a comprehensive suite of digital healthcare services, designed to streamline patient care and hospital operations.
 
 ## 🌐 Live Demo
-👉 **[Visit SmartCare Hospital Live](https://YOUR_USERNAME.github.io/SmartCare-Hospital/)**
+👉 **https://iqraiftikhar-328.github.io/SmartCare-Hospital/**
 
 ## ✨ Features
 - **🏠 Home Dashboard:** A welcoming landing page with quick access to all hospital services, key statistics, and a modern UI.
@@ -20,7 +20,6 @@ A modern, responsive, and interactive web portal for hospital management. This p
 ## 🛠️ Tech Stack
 - **HTML5:** Semantic structure for all 8 pages.
 - **CSS3:** Custom styling, flexbox, CSS grid, and keyframe animations.
-- **JavaScript:** Client-side interactivity and form handling.
 - **Font Awesome:** Icons for UI enhancement.
 
 ## 📂 Project Structure
