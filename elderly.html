@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Care - SmartCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Same navigation for all pages-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                SmartCare Hospital
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="appointment.html" class="nav-link active">Book Appointment</a></li>
+                <li class="nav-item"><a href="records.html" class="nav-link">Medical Records</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link">Ambulance</a></li>
+                <li class="nav-item"><a href="blood.html" class="nav-link">Blood Bank</a></li>
+                <li class="nav-item"><a href="symptom.html" class="nav-link">Symptom Checker</a></li>
+                <li class="nav-item"><a href="fitness.html" class="nav-link">Fitness Planner</a></li>
+                <li class="nav-item"><a href="elderly.html" class="nav-link">Elderly Care</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hidden header-->
+    <section class="page-header" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+        <div class="container">
+            <h1>Elderly Care Monitoring</h1>
+            <p>24/7 monitoring and care for your loved ones</p>
+        </div>
+    </section>
+
+    <!--Form body-->
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 40px;">
+            <div class="form-container">
+                <h3>Register Patient</h3>
+                <form id="elderlyRegister">
+                    <div class="form-group">
+                        <label>Senior Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Emergency Contact</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Conditions</label>
+                        <textarea rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register Patient</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h3>Monitor Patient</h3>
+                <form id="monitorForm">
+                    <div class="form-group">
+                        <label>Patient ID</label>
+                        <input type="text" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">View Status</button>
+                </form>
+                <div class="result-box glow" ="monitorResult" style="display:block; margin-top: 1rem;">
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; text-align: center;">
+                        <h4>Patient Status: Stable</h4>
+                        <p>Heart Rate: 72 bpm | BP: 120/80 | Oxygen: 98%</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                            <span style="color: #00b894;"><i class="fas fa-heartbeat"></i> Normal</span>
+                            <span style="color: #fdcb6e;"><i class="fas fa-chart-line"></i> Stable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer is same for all pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        SmartCare Hospital
+                    </div>
+                    <p>Your trusted healthcare partner for a healthier tomorrow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="ambulance.html">Emergency</a></li>
+                        <li><a href="symptom.html">Symptom Checker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 000 0000000</p>
+                    <p><i class="fas fa-envelope"></i> SmartCare@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

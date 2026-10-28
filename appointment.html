@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - SmartCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Same navigation for all pages-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                SmartCare Hospital
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="appointment.html" class="nav-link active">Book Appointment</a></li>
+                <li class="nav-item"><a href="records.html" class="nav-link">Medical Records</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link">Ambulance</a></li>
+                <li class="nav-item"><a href="blood.html" class="nav-link">Blood Bank</a></li>
+                <li class="nav-item"><a href="symptom.html" class="nav-link">Symptom Checker</a></li>
+                <li class="nav-item"><a href="fitness.html" class="nav-link">Fitness Planner</a></li>
+                <li class="nav-item"><a href="elderly.html" class="nav-link">Elderly Care</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hidden Header-->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Doctor Appointment</h1>
+            <p>Schedule your appointment online in just 2 minutes</p>
+        </div>
+    </section>
+
+    <!--Form body-->
+    <div class="form-container glow">
+    <h2>Book Appointment</h2>
+        <button type="submit" class="btn btn-primary">✓ Appointment Booked Successfully!</button>
+    
+    <!-- STATIC SUCCESS MESSAGE -->
+    <div class="result-box demo-content">
+        <i class="fas fa-check-circle" style="color: #00b894; font-size: 2rem;"></i>
+        <h3>Demo: Appointment Confirmed!</h3>
+        <p>Your appointment is booked with Dr. Smith on <strong>Tomorrow 10:00 AM</strong></p>
+        <div style="background: linear-gradient(135deg, #00b894, #00cec9); color: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+            <strong>Confirmation ID: #APPT-2024-001</strong>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <select required>
+                        <option value="">Select Department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="dermatology">Dermatology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Doctor</label>
+                    <select required>
+                        <option value="">Select Doctor</option>
+                        <option value="dr-smith">Dr. John Smith</option>
+                        <option value="dr-jones">Dr. Emily Jones</option>
+                        <option value="dr-lee">Dr. Michael Lee</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <select required>
+                        <option value="">Select Time</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Reason for Visit</label>
+                    <textarea rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Same footer for all pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        SmartCare Hospital
+                    </div>
+                    <p>Your trusted healthcare partner for a healthier tomorrow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="ambulance.html">Emergency</a></li>
+                        <li><a href="symptom.html">Symptom Checker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 000 0000000</p>
+                    <p><i class="fas fa-envelope"></i> SmartCare@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

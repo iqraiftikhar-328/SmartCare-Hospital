@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Ambulance - SmartCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">      
+                <i class="fas fa-heartbeat"></i>
+                SmartCare Hospital
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="appointment.html" class="nav-link">Book Appointment</a></li>
+                <li class="nav-item"><a href="records.html" class="nav-link">Medical Records</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link active">Ambulance</a></li>
+                <li class="nav-item"><a href="blood.html" class="nav-link">Blood Bank</a></li>
+                <li class="nav-item"><a href="symptom.html" class="nav-link">Symptom Checker</a></li>
+                <li class="nav-item"><a href="fitness.html" class="nav-link">Fitness Planner</a></li>
+                <li class="nav-item"><a href="elderly.html" class="nav-link">Elderly Care</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hidden header-->
+    <section class="page-header" style="background: linear-gradient(135deg, #ff3838, #ff4757);">
+        <div class="container">
+            <h1>Emergency Ambulance</h1>
+            <p>24/7 Emergency Response  <i class="fas fa-phone"></i> Call 911 for immediate help</p>
+        </div>
+    </section>
+
+    <!--Form body-->
+    <div class="container">
+        <div class="form-container">
+            <h2>Book Ambulance</h2>
+    <form id="ambulanceForm">
+        <div class="form-container glow" style="border-top: 5px solid #ff3838;">
+                <h2 style="color: #ff3838;">🚨 Emergency Ambulance</h2>
+                <button type="submit" class="btn" style="background: linear-gradient(135deg, #ff3838, #ff4757); width: 100%; font-size: 1.3rem; font-weight: bold;">🚑 DISPATCH NOW!</button>
+    
+               <!-- STATIC CONFIRMATION -->
+             <div class="result-box" style="border-left: 5px solid #ff3838; background: linear-gradient(135deg, #ffeaa7, #fab1a0);">
+                <h3>🚨 Ambulance Dispatched!</h3>
+             <div style="font-size: 1.2rem; text-align: center;">
+                    <i class="fas fa-ambulance" style="font-size: 3rem; color: #ff3838; animation: pulse 1s infinite; "></i>
+                    <p><strong>ETA: 8-12 minutes</strong></p>
+                    <p>Ambulance ID: <strong>AMB-247</strong></p>
+             </div>
+             </div>
+        </div>
+                <div class="form-group">
+                    <label>Patient Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Current Location</label>
+                    <input type="text" placeholder="Enter full address" required>
+                </div>
+                <div class="form-group">
+                    <label>Destination Hospital</label>
+                    <select required>
+                        <option value="">Select Hospital</option>
+                        <option value="smartcare">SmartCare Hospital (Main)</option>
+                        <option value="branch1">SmartCare Branch 1</option>
+                        <option value="branch2">SmartCare Branch 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Emergency Level</label>
+                    <select required>
+                        <option value="">Select Urgency</option>
+                        <option value="critical">Critical - Life Threatening</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Patient Condition</label>
+                    <textarea rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; background: #ff3838; font-size: 1.2rem;">Send Ambulance NOW!</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Same footer for all pages-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        SmartCare Hospital
+                    </div>
+                    <p>Your trusted healthcare partner for a healthier tomorrow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="ambulance.html">Emergency</a></li>
+                        <li><a href="symptom.html">Symptom Checker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 000 0000000</p>
+                    <p><i class="fas fa-envelope"></i> SmartCare@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records - SmartCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (same for all pages) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                SmartCare Hospital
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="appointment.html" class="nav-link">Book Appointment</a></li>
+                <li class="nav-item"><a href="records.html" class="nav-link active">Medical Records</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link">Ambulance</a></li>
+                <li class="nav-item"><a href="blood.html" class="nav-link">Blood Bank</a></li>
+                <li class="nav-item"><a href="symptom.html" class="nav-link">Symptom Checker</a></li>
+                <li class="nav-item"><a href="fitness.html" class="nav-link">Fitness Planner</a></li>
+                <li class="nav-item"><a href="elderly.html" class="nav-link">Elderly Care</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hidden header-->
+    <section class="page-header" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+        <div class="container">
+            <h1>Digital Medical Records</h1>
+            <p>Secure access to your complete medical history</p>
+        </div>
+    </section>
+
+    <!--Form body-->
+    <div class="container">
+        <div class="form-container">
+            <div class="form-container glow">
+    <h2>Medical Records Access</h2>
+
+    <div class="result-box glow">
+        <h3><i class="fas fa-file-medical-alt"></i> Your Medical History</h3>
+        <div style="display: grid; gap: 1rem; margin-top: 1rem;">
+            <div class="record-item glow" style="padding: 1rem; background: white; border-radius: 10px; border-left: 4px solid #667eea;">
+                <strong>2024-01-15</strong> | Dr. John Smith<br>
+                <span>Hypertension • Amlodipine 5mg daily</span>
+            </div>
+            <div class="record-item glow" style="padding: 1rem; background: white; border-radius: 10px; border-left: 4px solid #00b894;">
+                <strong>2023-12-10</strong> | Dr. Emily Jones<br>
+                <span>Routine Checkup • All tests normal</span>
+            </div>
+        </div>
+        <a href="#" class="btn btn-secondary" style="margin-top: 1rem; color:rgb(93, 93, 201); border:1px solid #00b894;">📥 Download PDF</a>
+    </div>
+</div>
+            <h2>Access Your Records</h2>
+            <form id="recordsForm">
+                <div class="form-group">
+                    <label>Patient ID / Email</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Access Records</button>
+            </form>
+
+            <div id="recordsResult" class="result-box" style="display: none;">
+                <h3>Your Medical Records</h3>
+                <div class="record-item">
+                    <strong>Date:</strong> 2024-01-15 | <strong>Doctor:</strong> Dr. John Smith<br>
+                    <strong>Diagnosis:</strong> Hypertension | <strong>Prescription:</strong> Amlodipine 5mg
+                </div>
+                <div class="record-item">
+                    <strong>Date:</strong> 2023-12-10 | <strong>Doctor:</strong> Dr. Emily Jones<br>
+                    <strong>Diagnosis:</strong> Routine Checkup | <strong>Tests:</strong> Blood Work Normal
+                </div>
+                <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">Download All Records</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer is same for all pages-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        SmartCare Hospital
+                    </div>
+                    <p>Your trusted healthcare partner for a healthier tomorrow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="ambulance.html">Emergency</a></li>
+                        <li><a href="symptom.html">Symptom Checker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 000 0000000</p>
+                    <p><i class="fas fa-envelope"></i> SmartCare@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

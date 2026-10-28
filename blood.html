@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank - SmartCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--Same navigation for all pages-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                SmartCare Hospital
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="appointment.html" class="nav-link active">Book Appointment</a></li>
+                <li class="nav-item"><a href="records.html" class="nav-link">Medical Records</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link">Ambulance</a></li>
+                <li class="nav-item"><a href="blood.html" class="nav-link">Blood Bank</a></li>
+                <li class="nav-item"><a href="symptom.html" class="nav-link">Symptom Checker</a></li>
+                <li class="nav-item"><a href="fitness.html" class="nav-link">Fitness Planner</a></li>
+                <li class="nav-item"><a href="elderly.html" class="nav-link">Elderly Care</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hidden header-->
+    <section class="page-header" style="background: linear-gradient(135deg, #ff9ff3, #f368e0);">
+        <div class="container">
+            <h1>Blood Donation Center</h1>
+            <p>Save lives - Donate blood today!</p>
+        </div>
+    </section>
+
+    <!--Form body-->
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 40px;">
+            <div class="form-container">
+                <h3><i class="fas fa-hand-holding-heart"></i> I Want to Donate</h3>
+                <form id="donorForm">
+                     <div class="result-box glow" style="grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 1rem;">
+                            <h3>Available Donors Today</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                           <div class="glow" style="padding: 1rem; background: linear-gradient(135deg, #ff9ff3, #f368e0); color: white; border-radius: 15px; text-align: center;">
+                           <strong>O+ Available</strong><br>3 Units
+                        </div>
+                     <div class="glow" style="padding: 1rem; background: linear-gradient(135deg, #00b894, #00cec9); color: white; border-radius: 15px; text-align: center;">
+                         <strong>A+ Available</strong><br>2 Units
+             </div>
+        </div>
+    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Blood Group</label>
+                        <select required>
+                            <option value="">Select Blood Group</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Available Date</label>
+                        <input type="date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register as Donor</button>
+                </form>
+            </div>
+<!--I need blood form-->
+            <div class="form-container">
+                <h3><i class="fas fa-tint"></i> I Need Blood</h3>
+                <form id="requestForm">
+                    <div class="form-group">
+                        <label>Patient Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Required Blood Group</label>
+                        <select required>
+                            <option value="">Select Blood Group</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Units Required</label>
+                        <input type="number" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background: #ff3838;">Request Blood</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer is same for all pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        SmartCare Hospital
+                    </div>
+                    <p>Your trusted healthcare partner for a healthier tomorrow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="ambulance.html">Emergency</a></li>
+                        <li><a href="symptom.html">Symptom Checker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 000 00000000</p>
+                    <p><i class="fas fa-envelope"></i> SmartCare@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
